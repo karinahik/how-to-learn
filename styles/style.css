@@ -46,19 +46,18 @@
 }
 
 .header__subtitle {
-  margin: 0;
   position: absolute;
-  max-width: 388px;
-  width: 100%;
+  width: 388px;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
+  font-size: 18px;
   font-weight: normal;
   z-index: 3;
 }
 
 .header__link {
-  color: #5076FF;
+  color: #2f80ed;
   text-decoration: none;
 }
 
@@ -79,8 +78,6 @@
   right:0;
   position: absolute;
 }
-
-
 
 .description {
   /*margin-top: 100px;*/
@@ -200,34 +197,31 @@
 }
 
 .feynman {
-  min-height: 890px;
-  background-color:  #f2f2f2;
+  background-color: #f2f2f2;
   position: relative;
-  align-items: center;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  min-height: 890px;
+  z-index: 1;
 }
 
 .feynman__title {
-  line-height: 1.15;
+  max-width: 648px;
   font-size: 120px;
   font-weight: 600;
-  width: 648px;
+  line-height: 1.15;
+  padding-top: 100px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 100px;
-  z-index: 1;
-  position: relative;
 }
+
 
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin: 0;
+  padding: 0;
   text-align: center;
-  margin-top: 70px;
   z-index: 1;
+  margin-top: 70px;
 }
 
 .feynman__link {
@@ -235,7 +229,7 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  color: #5076FF;
+  color: #2f80ed;
   text-decoration: none;
   right: 48px;
   top: 50%;
@@ -247,6 +241,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: -1;
 }
 
 .kaufman {
@@ -269,6 +264,8 @@
   color: white;
   width: 60%;
   z-index: 1;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .section-subtitle_theme_dark {
@@ -276,7 +273,8 @@
   font-size: 24px;
   font-weight: normal;
   color: white;
-  margin-top: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .table_theme_dark {
@@ -302,7 +300,6 @@
   font-weight: 600;
   margin: 0;
   padding: 0;
-
 }
 
 .table__text_theme_dark {
@@ -345,15 +342,18 @@
 }
 
 .footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
   flex-basis: 711px;
   justify-content: space-between;
 }
 
-.logo_plaсe_footer {
+.logo_place_footer {
   width: 228px;
   height: 32px;
-  margin-bottom: 150px;
+  background-image: url("../images/logo_place_footer.svg");
 }
+
 
 .footer__author {
   color: white;
